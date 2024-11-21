@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - PhishCheck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --highlight-color: #5865f2;
+            --text-dark: #333;
+            --background-color: #f9f9f9;
+            --border-radius: 12px;
+            --font: 'Poppins', sans-serif;
+            --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font);
+            background: linear-gradient(to right, #e3f2fd, #e1bee7);
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            justify-content: flex-start;
+            padding: 80px 20px 40px 20px; /* Added padding to body */
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            background-color: #fff;
+            box-shadow: var(--box-shadow);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: var(--highlight-color);
+        }
+
+        .navbar-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            margin: 0 15px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar-links a:hover {
+            color: var(--highlight-color);
+            transform: scale(1.1);
+        }
+
+        /* Content */
+        .content-wrapper {
+            max-width: 1000px;
+            padding: 20px;
+            color: var(--text-dark);
+            text-align: center;
+            margin-top: 20px; /* Space between navbar and content */
+            transition: transform 0.3s ease;
+        }
+
+        .content-wrapper:hover {
+            transform: translateY(-10px); /* Adds hover effect to lift the content */
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: var(--box-shadow);
+            position: relative; /* Footer no longer fixed */
+            bottom: 0;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: var(--highlight-color);
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 20px;
+            }
+
+            .content-wrapper {
+                padding: 15px;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">PhishCheck</div>
+        <div class="navbar-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/login">Login</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <h1>About PhishCheck</h1>
+        <p>PhishCheck is an advanced phishing and spam detection tool designed to protect users from online threats. Our tool uses machine learning algorithms to analyze URLs and text messages, providing instant detection of potentially dangerous content.</p>
+        
+        <h3>Our Mission</h3>
+        <p>Our mission is to make the internet safer by helping users identify malicious links and spam messages, minimizing the risks associated with phishing attacks and unwanted spam.</p>
+        
+        <h3>How It Works</h3>
+        <p>PhishCheck uses state-of-the-art algorithms to classify URLs and text messages based on various signals, such as suspicious patterns in URLs, known phishing domains, and spam keywords.</p>
+
+        <h3>Team</h3>
+        <p>Our team consists of cybersecurity experts and machine learning engineers dedicated to creating a robust and user-friendly phishing and spam detection system.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 PhishCheck. All rights reserved. | <a href="/terms">Terms of Service</a> | <a href="/privacy">Privacy Policy</a>
+    </div>
+
+</body>
+</html>
