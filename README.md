@@ -4,9 +4,10 @@ This project focuses on building a robust phishing URL and spam detection system
 Multiple classification algorithms were implemented and evaluated for their accuracy, precision, and overall performance. The Gradient Boosting Classifier emerged as the most effective model for phishing URL detection, while spam classification leveraged optimized NLP-based models. Both models were integrated into a real-time web application developed using Flask, offering users a seamless interface to test URLs and SMS/emails.
 
 The application uses REST API endpoints for secure communication and allows efficient scalability for larger datasets. Visualization techniques such as feature distribution plots and heatmaps have been used to gain insights from the dataset and validate the importance of features. Through the combination of feature-rich analysis, machine learning models, and an intuitive web interface, this project delivers a powerful tool for mitigating phishing and spam threats, which promises a safer online environment for both users and organizations.
-
+<br>
 
 ![image](https://github.com/user-attachments/assets/396665be-aa87-4b4c-aa10-10bc10252701)
 
+<br>
 
 ![image](https://github.com/user-attachments/assets/0c9a221e-c9f9-4d9e-8e68-3044d51f8b11)
